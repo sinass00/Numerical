@@ -5,7 +5,7 @@ function x = rueckwaertssubstitution(U, b)
         error('Input error: U must be square and b must have length n.');
     end
 
-    x = zeros(n, 1);  % Initialize solution vector
+    x = zeros(n, 1);  
     
     for i = n:-1:1
         if abs(U(i,i)) < eps
@@ -17,3 +17,4 @@ function x = rueckwaertssubstitution(U, b)
     end
 
 end
+
